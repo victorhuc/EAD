@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Filmes - Movieon</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="shortcut icon" type="image/jpg" href="https://cdn-icons-png.flaticon.com/512/777/777242.png"/>
+
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="https://cdn-icons-png.flaticon.com/512/777/777242.png" style="height: 30px; width: 30px;" alt="Logo" class="mr-2">
+                Movieon
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cadastro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre.html">Sobre Nós</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Movie Registration Form -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4 text-warning">Cadastro de Filmes</h2>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="movieTitle">Título do Filme</label>
+                    <input type="text" class="form-control" id="movieTitle" placeholder="Título do Filme">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="movieGenre">Gênero</label>
+                    <input type="text" class="form-control" id="movieGenre" placeholder="Gênero">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="movieYear">Ano</label>
+                    <input type="number" class="form-control" id="movieYear" placeholder="Ano">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="movieDescription">Descrição</label>
+                <textarea class="form-control" id="movieDescription" rows="3" placeholder="Descrição do Filme"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="movieImage">URL da Imagem</label>
+                <input type="text" class="form-control" id="movieImage" placeholder="URL da Imagem">
+            </div>
+            <div class="form-group">
+                <label for="movieTrailer">URL do Trailer</label>
+                <input type="text" class="form-control" id="movieTrailer" placeholder="URL do Trailer">
+            </div>
+            <button type="submit" class="btn btn-success">Cadastrar</button>
+        </form>
+    </div>
+
+    <!-- Movies Table -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4 text-warning">Lista de Filmes</h2>
+        <table class="table table-bordered">
+            <thead class="thead-light">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Título</th>
+                    <th scope="col">Gênero</th>
+                    <th scope="col">Ano</th>
+                    <th scope="col">Descrição</th>
+                    <th scope="col">Imagem</th>
+                    <th scope="col">Trailer</th>
+                    <th scope="col">Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Vingadores - Ultimato</td>
+                    <td>Ação</td>
+                    <td>2019</td>
+                    <td>Descrição do Filme 1</td>
+                    <td><img src="https://img.elo7.com.br/product/685x685/259A7AA/big-poster-filme-vingadores-ultimato-lo001-tamanho-90x60-cm-poster-marvel.jpg" height="50px" width="50px" alt="Filme 1"></td>
+                    <td><a href="https://www.youtube.com/watch?v=g6ng8iy-l0U" class="btn btn-info btn-sm"><i class="fas fa-play"></i> Assistir</a></td>
+                    <td>
+                        <button class="btn btn-warning btn-sm"><i class="fas fa-edit"></i> Editar</button>
+                        <button class="btn btn-danger btn-sm"><i class="fas fa-trash"></i> Excluir</button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Duna - Parte 2</td>
+                    <td>Ficção</td>
+                    <td>2024</td>
+                    <td>Descrição do Filme 1</td>
+                    <td><img src="https://wallpapercg.com/media/ts_orig/13356.webp" height="50px" width="50px" alt="Filme 1"></td>
+                    <td><a href="https://www.youtube.com/watch?v=4upWeOF30zI" class="btn btn-info btn-sm"><i class="fas fa-play"></i> Assistir</a></td>
+                    <td>
+                        <button class="btn btn-warning btn-sm"><i class="fas fa-edit"></i> Editar</button>
+                        <button class="btn btn-danger btn-sm"><i class="fas fa-trash"></i> Excluir</button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Kung Fu Panda 4</td>
+                    <td>Animação</td>
+                    <td>2024</td>
+                    <td>Descrição do Filme 1</td>
+                    <td><img src="https://cinepop.com.br/wp-content/uploads/2024/01/kung-fu-panda-2.jpg" height="50px" width="50px" alt="Filme 1"></td>
+                    <td><a href="https://www.youtube.com/watch?v=_inKs4eeHiI" class="btn btn-info btn-sm"><i class="fas fa-play"></i> Assistir</a></td>
+                    <td>
+                        <button class="btn btn-warning btn-sm"><i class="fas fa-edit"></i> Editar</button>
+                        <button class="btn btn-danger btn-sm"><i class="fas fa-trash"></i> Excluir</button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Bad Boys - Para Sempre</td>
+                    <td>Ação/Comédia</td>
+                    <td>2024</td>
+                    <td>Descrição do Filme 1</td>
+                    <td><img src="https://img.elo7.com.br/product/zoom/2CE1E76/big-poster-filme-bad-boys-para-sempre-lo001-tamanho-90x60-cm-nerd.jpg" height="50px" width="50px" alt="Filme 1"></td>
+                    <td><a href="https://www.youtube.com/watch?v=_inKs4eeHiI" class="btn btn-info btn-sm"><i class="fas fa-play"></i> Assistir</a></td>
+                    <td>
+                        <button class="btn btn-warning btn-sm"><i class="fas fa-edit"></i> Editar</button>
+                        <button class="btn btn-danger btn-sm"><i class="fas fa-trash"></i> Excluir</button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td>Tarô da Morte</td>
+                    <td>Terror</td>
+                    <td>2024</td>
+                    <td>Descrição do Filme 1</td>
+                    <td><img src="https://br.web.img3.acsta.net/c_310_420/img/52/39/52394effa9672900bc01c79c7d2e5546.jpg" height="50px" width="50px" alt="Filme 1"></td>
+                    <td><a href="https://www.youtube.com/watch?v=_inKs4eeHiI" class="btn btn-info btn-sm"><i class="fas fa-play"></i> Assistir</a></td>
+                    <td>
+                        <button class="btn btn-warning btn-sm"><i class="fas fa-edit"></i> Editar</button>
+                        <button class="btn btn-danger btn-sm"><i class="fas fa-trash"></i> Excluir</button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">6</th>
+                    <td>Deadpool x Wolwerine</td>
+                    <td>Comédia/Ação</td>
+                    <td>2024</td>
+                    <td>Descrição do Filme 1</td>
+                    <td><img src="https://d2d7ho1ae66ldi.cloudfront.net/ArquivoNoticias/f45cec3e-272b-11ef-aa78-d602bea5d5c0/deadpool-wolverine-poster.jpg" height="50px" width="50px" alt="Filme 1"></td>
+                    <td><a href="https://www.youtube.com/watch?v=_inKs4eeHiI" class="btn btn-info btn-sm"><i class="fas fa-play"></i> Assistir</a></td>
+                    <td>
+                        <button class="btn btn-warning btn-sm"><i class="fas fa-edit"></i> Editar</button>
+                        <button class="btn btn-danger btn-sm"><i class="fas fa-trash"></i> Excluir</button>
+                    </td>
+                </tr>
+                <!-- Outras linhas de filmes -->
+            </tbody>
+        </table>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="bg-info  text-light py-4">
+        <div class="container text-center">
+            <div class="mb-3">
+                <a href="#" class="text-secondary mx-2"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-secondary mx-2"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-secondary mx-2"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-secondary mx-2"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p class="mb-0">&copy; 2024 Movieon. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
